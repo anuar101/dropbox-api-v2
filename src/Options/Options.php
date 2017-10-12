@@ -117,7 +117,8 @@
          *
          * @return Options
          */
-        public static function merge(...$options) {
+        //public static function merge(...$options) { error in php 7.1
+        public static function merge($options) {
             $o = [];
 
             foreach ($options as $opt) {
